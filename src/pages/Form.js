@@ -35,7 +35,10 @@ const Form = ({initialBlog, handleSubmit, buttonLabel}) => {
             name="subject"
             placeholder="Subject"
         />
-        <input className="create"
+        <input style={{
+            maxWidth: "300px",
+            display: "center"
+            }} // What is the best way to create a centered display
             type="text"
             onChange={handleChange}
             value={formData.details}
